@@ -10,20 +10,21 @@ INSERT INTO user_account
  authorities)
 VALUES
   (DEFAULT,
-   'test1@gmail.com',
-   '$2a$10$QWlgG.OD2HYU.qv49oe/N.vAmWtFSoxuL1qTG1pCVF3WWIMBnQ7WG',
+   'user',
+   -- "default"
+   '$2a$10$D/BD50zBDnWUOZX9WxKs2OIIy19FaU1uyhoOUfY5hBsmF/Z2Rsm2u',
    true,
    true,
    true,
    true,
-   'USER,SUPER_ADMIN'),
+   'USER'),
 
     (DEFAULT,
-   'test2@gmail.com',
-   '$2a$10$QWlgG.OD2HYU.qv49oe/N.vAmWtFSoxuL1qTG1pCVF3WWIMBnQ7WG',
+   'super_admin@gmail.com',
+   '$2a$10$fU3tS7uddkaupjg5T7/EQuQyJnvO6V7P7HKNJb2CnlZ6Vhp/8VfFC',
    true,
    true,
    true,
    true,
-   'USER,SUPER_ADMIN')
+   'USER,ADMIN,SUPER_ADMIN')
 ;
